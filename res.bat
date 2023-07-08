@@ -16,8 +16,8 @@ if %errorlevel% equ 0 (
 
 ECHO Installing Python and required packages...
 
-winget install python
-pip install pyautogui pywinauto argparse
+winget install python --accept-package-agreements --silent
+pip install -y pyautogui pywinauto argparse
 
 CLS
 
