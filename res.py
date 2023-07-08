@@ -26,6 +26,15 @@ def switch_resolution(resolution):
     # Click "Apply"
     app.child_window(title='Übernehmen').click_input()
 
+    # Confirm the resolution change
+    time.sleep(0.75)
+    pyautogui.press('alt')
+    pyautogui.press('j')
+    pyautogui.press('j')
+
+    time.sleep(0.75)
+    pyautogui.hotkey('alt', 'f4')
+
     # Close the NVIDIA Control Panel
     app.close()
 
